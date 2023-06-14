@@ -1,31 +1,54 @@
-body{
+*{
+    box-sizing: border-box;
+}
+
+h1 , button{
+    color: white;
+}
+
+
+button{
+    background-color: black;
+    margin: 4rem 0;
+}
+    
+body {
     font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: black;
     text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .h1{
     font-size: 29px;
     line-height: 5;
 }
-#nick{
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.cards img{
+    width: 10rem;
+    border-radius: 2%;
+    margin: 0.8rem;
+}
+
+.card-profile:hover p.paragraph{
+    color: red;
+    filter: contrast(0.5);
+    cursor: pointer;
+}
+
+.paragraph{
     color: gray;
-    text-decoration-line: none;
-    display:inline-grid ;
     font-size: 20px;
 }
-.cards{
 
-    height: 350px;
-}
-.cards img{
-    width: 225px;
-    margin: 20px 15px 15px 15px; 
-    border-radius: 2%;
-}    
-h1 , button{
-    color: white;
-}    
-button{
-    background-color: black;
-}    
+
 
